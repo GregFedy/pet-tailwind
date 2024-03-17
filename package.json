@@ -1,0 +1,11 @@
+{
+  "name": "tailwind",
+  "module": "index.ts",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./src/main.css -o ./public/styles.css --watch"
+  },
+  "type": "module"
+}
