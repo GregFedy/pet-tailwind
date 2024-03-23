@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="./public/styles.css" />
     <title>TailwindCSS</title>
   </head>
-  <body>
+  <body class="bg-gray-100 dark:bg-gray-900">
     <div class="max-w-screen-xl mx-auto">
       <!-- header -->
       <header class="px-2 border-b flex items-center justify-between h-14">
-        <a class="uppercase font-bold text-purple-800" href="#"
+        <a
+          class="uppercase font-bold text-purple-800 dark:text-purple-500"
+          href="#"
           >Gregory Fedorenko</a
         >
         <nav class="hidden md:flex items-center">
@@ -34,7 +36,7 @@
             </li>
           </ul>
         </nav>
-        <button class="inline-block md:hidden">
+        <button class="inline-block md:hidden dark:text-slate-400">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -55,7 +57,9 @@
       <!-- breadcrumbs -->
       <div class="px-2 flex items-center">
         <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
-          <a class="text-gray-600 hover:text-gray-900" href="#"
+          <a
+            class="dark:text-slate-400 text-gray-600 hover:text-gray-900 dark:hover:text-gray-300 transition-all duration-300"
+            href="#"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -87,7 +91,11 @@
               />
             </svg>
           </span>
-          <a class="text-gray-600 hover:text-gray-900" href="#">News</a>
+          <a
+            class="dark:text-slate-400 text-gray-600 hover:text-gray-900 dark:hover:text-gray-300 transition-all duration-300"
+            href="#"
+            >News</a
+          >
           <span class="mx-2 text-gray-300"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +112,11 @@
               />
             </svg>
           </span>
-          <a class="text-gray-600 hover:text-gray-900" href="#">Tech</a>
+          <a
+            class="dark:text-slate-400 text-gray-600 hover:text-gray-900 dark:hover:text-gray-300 transition-all duration-300"
+            href="#"
+            >Tech</a
+          >
         </div>
       </div>
 
@@ -119,7 +131,7 @@
           ></div>
           <img
             class="absolute left-0 top-0 w-full h-full z-0 object-cover"
-            src="https://source.unsplash.com/random/1920x1080/?ai"
+            src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="news"
           />
           <div class="p-4 absolute bottom-0 left-0 z-20">
@@ -127,6 +139,21 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
               consequuntur.
             </h2>
+            <span
+              class="bg-gradient-to-bl from-blue-600 to-indigo-600 text-white inline-flex items-center justify-center px-4 py-1 my-2"
+              >React</span
+            >
+            <div class="flex mt-3">
+              <img
+                class="h-10 w-10 rounded-full mr-2 object-cover"
+                src="https://randomuser.me/api/portraits/men/27.jpg"
+                alt="Author"
+              />
+              <div>
+                <p class="font-semibold text-gray-200 text-sm">John Doe</p>
+                <time class="text-gray-400 text-xs">14 March</time>
+              </div>
+            </div>
           </div>
         </a>
 
@@ -139,13 +166,28 @@
           ></div>
           <img
             class="absolute left-0 top-0 w-full h-full z-0 object-cover"
-            src="https://source.unsplash.com/random/1920x1080/?it"
+            src="https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="news"
           />
           <div class="p-4 absolute bottom-0 left-0 z-20">
             <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </h2>
+            <span
+              class="bg-gradient-to-bl from-red-500 to-red-700 text-white inline-flex items-center justify-center px-4 py-1 my-2"
+              >Angular</span
+            >
+            <div class="flex mt-3">
+              <img
+                class="h-10 w-10 rounded-full mr-2 object-cover"
+                src="https://randomuser.me/api/portraits/women/17.jpg"
+                alt="Author"
+              />
+              <div>
+                <p class="font-semibold text-gray-200 text-sm">Suzan Doe</p>
+                <time class="text-gray-400 text-xs">14 March</time>
+              </div>
+            </div>
           </div>
         </a>
       </section>
@@ -157,16 +199,18 @@
             <a class="block w-full lg:flex mb-10" href="#">
               <img
                 class="w-full h-48 lg:w-48 lg:mr-4 opacity-80 object-cover"
-                src="https://source.unsplash.com/random/800*600/?internet"
+                src="https://source.unsplash.com/random/?internet"
                 alt="img"
               />
-              <div class="flex">
+              <div class="flex flex-col justify-between">
                 <div>
-                  <h3 class="mb-2 text-gray-700 font-bold text-2xl">
+                  <h3
+                    class="dark:text-white mb-2 text-gray-700 font-bold text-2xl"
+                  >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Odit, architecto?
                   </h3>
-                  <p class="text-gray-700">
+                  <p class="text-gray-700 dark:text-slate-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Culpa cumque repudiandae quisquam veritatis sint corrupti.
                     Consequuntur veniam sapiente saepe cupiditate sed? Neque
@@ -177,11 +221,20 @@
                     odio, nemo at voluptate nobis eligendi ipsa? Itaque beatae
                     adipisci blanditiis iusto nobis. Tempora, soluta perferendis
                     incidunt architecto culpa vel sint modi laborum eos velit!
-                    Veritatis, possimus consequuntur itaque corrupti cupiditate
-                    amet. Animi error incidunt perferendis. Fugiat tenetur,
-                    optio ab natus corrupti atque deserunt exercitationem? Non,
-                    alias?
                   </p>
+                </div>
+                <div class="flex mt-3">
+                  <img
+                    class="h-10 w-10 rounded-full mr-2 object-cover"
+                    src="https://randomuser.me/api/portraits/men/2.jpg"
+                    alt="Author"
+                  />
+                  <div>
+                    <p class="font-semibold text-gray-400 text-sm">
+                      Johnathan Doe
+                    </p>
+                    <time class="text-gray-400 text-xs">14 March</time>
+                  </div>
                 </div>
               </div>
             </a>
@@ -189,16 +242,18 @@
             <a class="block w-full lg:flex mb-10" href="#">
               <img
                 class="w-full h-48 lg:w-48 lg:mr-4 opacity-80 object-cover"
-                src="https://source.unsplash.com/random/800*600/?programming"
+                src="https://source.unsplash.com/random/?programming"
                 alt="img"
               />
-              <div class="flex">
+              <div class="flex flex-col justify-between">
                 <div>
-                  <h3 class="mb-2 text-gray-700 font-bold text-2xl">
+                  <h3
+                    class="dark:text-white mb-2 text-gray-700 font-bold text-2xl"
+                  >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Esse nulla obcaecati quia.
                   </h3>
-                  <p class="text-gray-700">
+                  <p class="text-gray-700 dark:text-slate-400">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Eos magni nostrum atque a quis esse ipsa assumenda ullam
                     cupiditate libero molestiae officiis, rem iure perspiciatis
@@ -208,11 +263,19 @@
                     quibusdam enim velit, optio repellendus asperiores ullam
                     eaque ratione iusto! Laborum id hic error, veniam dicta
                     quisquam nesciunt exercitationem veritatis possimus
-                    provident temporibus ratione! Velit maxime corrupti fugiat
-                    officiis est, nulla consectetur pariatur voluptatem
-                    necessitatibus natus amet. Veritatis adipisci explicabo
-                    culpa omnis, iusto commodi ea nobis dolores beatae.
+                    provident temporibus ratione!
                   </p>
+                </div>
+                <div class="flex mt-3">
+                  <img
+                    class="h-10 w-10 rounded-full mr-2 object-cover"
+                    src="https://randomuser.me/api/portraits/women/27.jpg"
+                    alt="Author"
+                  />
+                  <div>
+                    <p class="font-semibold text-gray-400 text-sm">Jane Doe</p>
+                    <time class="text-gray-400 text-xs">18 March</time>
+                  </div>
                 </div>
               </div>
             </a>
@@ -220,29 +283,37 @@
             <a class="block w-full lg:flex mb-10" href="#">
               <img
                 class="w-full h-48 lg:w-48 lg:mr-4 opacity-80 object-cover"
-                src="https://source.unsplash.com/random/800*600/?hacking"
+                src="https://source.unsplash.com/random/?hacking"
                 alt="img"
               />
-              <div class="flex">
+              <div class="flex flex-col justify-between">
                 <div>
-                  <h3 class="mb-2 text-gray-700 font-bold text-2xl">
+                  <h3
+                    class="dark:text-white mb-2 text-gray-700 font-bold text-2xl"
+                  >
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   </h3>
-                  <p class="text-gray-700">
+                  <p class="text-gray-700 dark:text-slate-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Aliquid ullam ipsa quidem reiciendis libero nostrum nobis
                     adipisci? Sapiente et iste consequuntur iure molestias
                     repellendus molestiae adipisci rerum odio? Aliquid totam
                     dolores blanditiis quidem eum minus deleniti est sapiente
-                    natus odio, nobis alias tempora voluptates, nesciunt fuga
-                    corrupti doloremque quibusdam ipsam illum beatae laborum,
-                    perferendis sequi. Expedita quam inventore sapiente
-                    cupiditate modi tempora nulla tenetur facere quo harum et
-                    sed, aliquid alias, repudiandae, vel consequatur! Debitis
-                    amet sint nihil sequi dolor hic repellat magnam, tempore
-                    vitae ipsam odit error tenetur. Eveniet labore minima natus
-                    blanditiis nesciunt!
+                    natus odio.
                   </p>
+                </div>
+                <div class="flex mt-3">
+                  <img
+                    class="h-10 w-10 rounded-full mr-2 object-cover"
+                    src="https://randomuser.me/api/portraits/men/26.jpg"
+                    alt="Author"
+                  />
+                  <div>
+                    <p class="font-semibold text-gray-400 text-sm">
+                      Albert Doe
+                    </p>
+                    <time class="text-gray-400 text-xs">19 March</time>
+                  </div>
                 </div>
               </div>
             </a>
@@ -261,7 +332,7 @@
               </li>
               <li>
                 <a
-                  class="pagination-item text-blue-600 hover:bg-blue-100"
+                  class="pagination-item text-blue-600 dark:text-blue-400 hover:bg-blue-100 transition-all duration-300"
                   href="#"
                   >3</a
                 >
@@ -283,12 +354,19 @@
         >
           <!-- topics -->
           <div class="w-full md:w-1/2 lg:w-full mb-5">
-            <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">
+            <h5
+              class="dark:text-white font-bold text-lg uppercase text-gray-700 mb-2"
+            >
               Popular News
             </h5>
             <ul>
-              <li class="px-1 py-4 border-y border-white hover:border-gray-200">
-                <a class="flex items-center to-gray-600" href="#">
+              <li
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+              >
+                <a
+                  class="dark:text-slate-400 flex items-center to-gray-600"
+                  href="#"
+                >
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700"
                   ></span>
@@ -296,8 +374,13 @@
                   <span class="to-gray-500 ml-auto">23 articles</span>
                 </a>
               </li>
-              <li class="px-1 py-4 border-y border-white hover:border-gray-200">
-                <a class="flex items-center to-gray-600" href="#">
+              <li
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+              >
+                <a
+                  class="dark:text-slate-400 flex items-center to-gray-600"
+                  href="#"
+                >
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700"
                   ></span>
@@ -305,8 +388,13 @@
                   <span class="to-gray-500 ml-auto">20 articles</span>
                 </a>
               </li>
-              <li class="px-1 py-4 border-y border-white hover:border-gray-200">
-                <a class="flex items-center to-gray-600" href="#">
+              <li
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+              >
+                <a
+                  class="dark:text-slate-400 flex items-center to-gray-600"
+                  href="#"
+                >
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700"
                   ></span>
@@ -314,8 +402,13 @@
                   <span class="to-gray-500 ml-auto">15 articles</span>
                 </a>
               </li>
-              <li class="px-1 py-4 border-y border-white hover:border-gray-200">
-                <a class="flex items-center to-gray-600" href="#">
+              <li
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+              >
+                <a
+                  class="dark:text-slate-400 flex items-center to-gray-600"
+                  href="#"
+                >
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700"
                   ></span>
@@ -331,17 +424,21 @@
 
             <!-- subscribe -->
             <div class="my-5 md:my-0 lg:my-5">
-              <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">
+              <h5
+                class="dark:text-white font-bold text-lg uppercase text-gray-700 mb-2"
+              >
                 Subscribe
               </h5>
-              <p class="text-gray-600 mb-4">Subscribe to our newsletter.</p>
+              <p class="dark:text-slate-400 text-gray-600 mb-4">
+                Subscribe to our newsletter.
+              </p>
               <input
-                class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600"
+                class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600 transition-all duration-300"
                 placeholder="Enter your email"
                 type="email"
               />
               <button
-                class="px-4 py-2 bg-indigo-600 text-white roundend-b w-full hover:bg-indigo-800"
+                class="px-4 py-2 bg-indigo-600 text-white roundend-b w-full hover:bg-indigo-800 transition-all duration-300"
               >
                 Subscribe
               </button>
@@ -357,7 +454,9 @@
       <footer class="border-t mt-10 py-10 px-2">
         <div class="md:flex">
           <div class="w-full mb-5 md:w-2/5">
-            <h6 class="font-semibold text-gray-700 mb-3">Company</h6>
+            <h6 class="dark:text-white font-semibold text-gray-700 mb-3">
+              Company
+            </h6>
             <ul>
               <li>
                 <a class="footer-link" href="#">Team</a>
@@ -368,38 +467,28 @@
             </ul>
           </div>
           <div class="w-full mb-5 md:w-2/5">
-            <h6 class="font-semibold text-gray-700 mb-3">Content</h6>
+            <h6 class="dark:text-white font-semibold text-gray-700 mb-3">
+              Content
+            </h6>
             <ul>
               <li>
-                <a
-                  class="inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2"
-                  href="#"
-                  >Block</a
-                >
+                <a class="footer-link" href="#">Block</a>
               </li>
               <li>
-                <a
-                  class="inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2"
-                  href="#"
-                  >Policy</a
-                >
+                <a class="footer-link" href="#">Policy</a>
               </li>
               <li>
-                <a
-                  class="inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2"
-                  href="#"
-                  >Documentation</a
-                >
+                <a class="footer-link" href="#">Documentation</a>
               </li>
             </ul>
           </div>
           <div class="w-full md:w-1/5">
-            <h6 class="font-semibold text-gray-700 mb-3">Contact Us</h6>
+            <h6 class="dark:text-white font-semibold text-gray-700 mb-3">
+              Contact Us
+            </h6>
             <ul class="flex">
               <li class="mr-2">
-                <a
-                  class="inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2"
-                  href="#"
+                <a class="footer-link" href="#"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -417,9 +506,7 @@
                 </a>
               </li>
               <li class="mr-2">
-                <a
-                  class="inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2"
-                  href="#"
+                <a class="footer-link" href="#"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -437,9 +524,7 @@
                 </a>
               </li>
               <li>
-                <a
-                  class="inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2"
-                  href="#"
+                <a class="footer-link" href="#"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
